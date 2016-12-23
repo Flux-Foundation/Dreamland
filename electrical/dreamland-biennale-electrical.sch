@@ -41,10 +41,10 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "Dreamland main outline"
 Date "2000-12-31"
-Rev "1a"
+Rev "1b"
 Comp "Flux Foundation"
 Comment1 ""
 Comment2 ""
@@ -236,5 +236,11 @@ S 1700 2250 2150 2050
 U 585D9EED
 F0 "main_control_box_internals" 60
 F1 "main_control_box_internals.sch" 60
+$EndSheet
+$Sheet
+S 1700 5000 1150 550 
+U 585D9FF9
+F0 "network_layout" 60
+F1 "network_layout.sch" 60
 $EndSheet
 $EndSCHEMATC
