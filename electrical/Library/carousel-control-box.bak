@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Carousel-control-box
+#
+DEF Carousel-control-box ca-cb 0 40 Y Y 1 F N
+F0 "ca-cb" 400 300 60 H V C CNN
+F1 "Carousel-control-box" 0 800 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -550 750 550 350 0 1 0 N
+X Data ~ -750 550 200 R 50 50 1 1 B
+X Encoder ~ -750 450 200 R 50 50 1 1 I
+X Power ~ -750 650 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

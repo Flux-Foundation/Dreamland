@@ -1,0 +1,104 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Bench-control-box
+#
+DEF Bench-control-box b-cb 0 40 Y Y 1 F N
+F0 "b-cb" 400 350 60 H V C CNN
+F1 "Bench-control-box" 0 800 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -550 750 550 400 0 1 0 N
+X Data ~ -750 500 200 R 50 50 1 1 B
+X Power ~ -750 650 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Carousel-control-box
+#
+DEF Carousel-control-box ca-cb 0 40 Y Y 1 F N
+F0 "ca-cb" 400 300 60 H V C CNN
+F1 "Carousel-control-box" 0 800 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -550 750 550 350 0 1 0 N
+X Data ~ -750 550 200 R 50 50 1 1 B
+X Encoder ~ -750 450 200 R 50 50 1 1 I
+X Power ~ -750 650 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Main-control-box
+#
+DEF Main-control-box m-cb 0 40 Y Y 1 F N
+F0 "m-cb" 850 -900 60 H V C CNN
+F1 "Main-control-box" 0 800 60 H V C CNN
+F2 "" -100 350 60 H I C CNN
+F3 "" -100 350 60 H I C CNN
+DRAW
+S -900 750 1000 -800 0 1 0 N
+X Benches__data ~ 1200 -700 200 L 50 50 1 1 w
+X Benches_power ~ 1200 -600 200 L 50 50 1 1 w
+X Lamppost_1__data ~ 1200 550 200 L 50 50 1 1 B
+X Lamppost_1_power ~ 1200 650 200 L 50 50 1 1 w
+X Lamppost_2__data ~ 1200 300 200 L 50 50 1 1 B
+X Lamppost_2_power ~ 1200 400 200 L 50 50 1 1 w
+X Lamppost_3__data ~ 1200 50 200 L 50 50 1 1 B
+X Lamppost_3_power ~ 1200 150 200 L 50 50 1 1 w
+X Lower_carousel__data ~ 1200 -200 200 L 50 50 1 1 B
+X Lower_carousel_power ~ 1200 -100 200 L 50 50 1 1 w
+X Main_Data ~ -1100 -700 200 R 50 50 1 1 B
+X Main_Power_in ~ -1100 650 200 R 50 50 1 1 W
+X Upper_carousel__data ~ 1200 -450 200 L 50 50 1 1 B
+X Upper_carousel_power ~ 1200 -350 200 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# lamppost-control-box
+#
+DEF lamppost-control-box lp-cb 0 40 Y Y 1 F N
+F0 "lp-cb" 400 350 60 H V C CNN
+F1 "lamppost-control-box" 0 800 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -550 750 550 400 0 1 0 N
+X Data ~ -750 500 200 R 50 50 1 1 B
+X Power ~ -750 650 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# lower-carousel-control-box
+#
+DEF lower-carousel-control-box lc-cb 0 40 Y Y 1 F N
+F0 "lc-cb" 400 350 60 H V C CNN
+F1 "lower-carousel-control-box" 0 800 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -550 750 550 400 0 1 0 N
+X Data ~ -750 500 200 R 50 50 1 1 B
+X Power ~ -750 650 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# slip-ring
+#
+DEF slip-ring sr 0 40 Y Y 1 F N
+F0 "sr" 450 0 60 H V C CNN
+F1 "slip-ring" 0 500 60 H V C CNN
+F2 "" -150 0 60 H I C CNN
+F3 "" -150 0 60 H I C CNN
+DRAW
+S -450 400 500 50 0 1 0 N
+X Data_in ~ -650 250 200 R 50 50 1 1 B
+X Data_out ~ 700 250 200 L 50 50 1 1 B
+X Encoder ~ 700 150 200 L 50 50 1 1 O
+X Power_in ~ -650 350 200 R 50 50 1 1 W
+X Power_out ~ 700 350 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library
