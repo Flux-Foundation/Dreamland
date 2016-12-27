@@ -41,9 +41,9 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
-Date ""
+Date "2000-12-31"
 Rev "1a"
 Comp "Flux Foundation"
 Comment1 ""
