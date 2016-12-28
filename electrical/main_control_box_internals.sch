@@ -149,10 +149,10 @@ Wire Wire Line
 Text HLabel 10000 3700 2    60   Input ~ 0
 Access_point
 $Comp
-L intel_nuc nuc?
+L intel_nuc nuc
 U 1 1 586000A8
 P 5500 4600
-F 0 "nuc?" H 5600 6750 60  0000 C CNN
+F 0 "nuc" H 5600 6750 60  0000 C CNN
 F 1 "intel_nuc" H 5500 6650 60  0000 C CNN
 F 2 "" H 5500 4600 60  0001 C CNN
 F 3 "" H 5500 4600 60  0001 C CNN
@@ -175,27 +175,27 @@ Wire Wire Line
 	1150 4400 2850 4400
 Wire Wire Line
 	2850 4400 2850 4500
-Text Label 9800 3700 2    60   ~ 0
+Text Label 10000 3700 2    60   ~ 0
 eth_ap
-Text Label 9850 3900 2    60   ~ 0
+Text Label 10000 3900 2    60   ~ 0
 eth_lp1
-Text Label 9850 4100 2    60   ~ 0
+Text Label 10000 4100 2    60   ~ 0
 eth_lp2
-Text Label 9850 4300 2    60   ~ 0
+Text Label 10000 4300 2    60   ~ 0
 eth_lp3
-Text Label 9850 4500 2    60   ~ 0
-eth_ben
-Text Label 9800 4700 2    60   ~ 0
+Text Label 10000 4500 2    60   ~ 0
+eth_b
+Text Label 10000 4700 2    60   ~ 0
 eth_cb
-Text Label 9800 4900 2    60   ~ 0
-eth_cl
+Text Label 10000 4900 2    60   ~ 0
+eth_ct
 Text Label 5300 4100 1    60   ~ 0
 eth_nuc
 $Comp
-L Switch_DPST SW?
+L Switch_DPST SW
 U 1 1 58600EAA
 P 1800 1200
-F 0 "SW?" H 1800 1700 50  0000 C CNN
+F 0 "SW" H 1800 1700 50  0000 C CNN
 F 1 "Disconnect_sw" H 1800 1600 50  0000 C CNN
 F 2 "" H 1800 1200 50  0000 C CNN
 F 3 "" H 1800 1200 50  0000 C CNN
@@ -229,13 +229,15 @@ Wire Bus Line
 Wire Bus Line
 	3500 800  3800 800 
 Wire Bus Line
+	3800 800  4100 800 
+Wire Bus Line
 	2200 800  2200 1100
 Wire Bus Line
 	2200 1100 2200 1500
 Wire Bus Line
-	2200 1500 2200 1700
+	2200 1500 2200 1450
 Wire Bus Line
-	2200 1700 2200 4900
+	2200 1450 2200 4650
 Entry Wire Line
 	3200 800  3300 900 
 Entry Wire Line
@@ -255,10 +257,10 @@ L2
 Text Label 1400 1600 0    60   ~ 0
 GND
 $Comp
-L 12V_power_supply ps?
+L 12V_power_supply ps
 U 1 1 58613A42
 P 3600 2400
-F 0 "ps?" H 3600 3350 60  0000 C CNN
+F 0 "ps" H 3600 3350 60  0000 C CNN
 F 1 "12V_power_supply" H 3600 3450 60  0000 C CNN
 F 2 "" H 3600 2400 60  0001 C CNN
 F 3 "" H 3600 2400 60  0001 C CNN
@@ -272,7 +274,7 @@ Entry Wire Line
 Wire Bus Line
 	3600 2100 3800 2100
 Wire Bus Line
-	3800 2100 4200 2100
+	3800 2100 6000 2100
 Wire Bus Line
 	4200 2100 4200 3600
 Wire Bus Line
@@ -298,5 +300,204 @@ Entry Bus Bus
 Wire Bus Line
 	2550 5000 2600 5000
 Wire Bus Line
-	2200 4900 2450 4900
+	2200 4650 2450 4900
+$Comp
+L dinrelay dr
+U 1 1 5863FBFF
+P 7650 2000
+F 0 "dr" H 8750 2350 60  0000 C CNN
+F 1 "dinrelay" H 8650 2450 60  0000 C CNN
+F 2 "" H 7650 2050 60  0001 C CNN
+F 3 "" H 7650 2050 60  0001 C CNN
+	1    7650 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7250 2600 7250 3400
+Wire Wire Line
+	7250 3400 6400 3400
+Wire Wire Line
+	6400 3400 6400 5600
+Wire Bus Line
+	4100 800  4100 600 
+Wire Bus Line
+	4100 600  6100 600 
+Wire Bus Line
+	6100 600  8950 600 
+Entry Wire Line
+	6100 600  6200 700 
+Wire Wire Line
+	6200 700  6200 1850
+Wire Wire Line
+	6200 1850 6200 2150
+Wire Wire Line
+	6200 2150 6200 2500
+Wire Wire Line
+	6200 1850 6700 1850
+Wire Wire Line
+	6200 2150 6700 2150
+Connection ~ 6200 1850
+Wire Wire Line
+	6200 2500 8000 2500
+Wire Wire Line
+	8000 2500 8000 2150
+Wire Wire Line
+	8000 2150 8000 1850
+Wire Wire Line
+	8000 1850 8000 1550
+Wire Wire Line
+	8000 1550 8000 1250
+Wire Wire Line
+	8000 1250 7800 1250
+Connection ~ 6200 2150
+Wire Wire Line
+	7800 1550 8000 1550
+Connection ~ 8000 1550
+Wire Wire Line
+	7800 1850 8000 1850
+Connection ~ 8000 1850
+Wire Wire Line
+	7800 2150 8000 2150
+Connection ~ 8000 2150
+Wire Bus Line
+	8950 600  8950 2000
+Wire Bus Line
+	8950 2000 9300 2000
+Wire Bus Line
+	9300 2000 10000 2000
+Wire Bus Line
+	8950 1800 9300 1800
+Wire Bus Line
+	9300 1800 10000 1800
+Wire Bus Line
+	8950 1600 9300 1600
+Wire Bus Line
+	9300 1600 10000 1600
+Wire Bus Line
+	8950 1400 9300 1400
+Wire Bus Line
+	9300 1400 10000 1400
+Wire Bus Line
+	8950 1200 9300 1200
+Wire Bus Line
+	9300 1200 10000 1200
+Wire Bus Line
+	8950 1000 9300 1000
+Wire Bus Line
+	9300 1000 10000 1000
+Entry Wire Line
+	9200 1900 9300 2000
+Entry Wire Line
+	9200 1700 9300 1800
+Entry Wire Line
+	9200 1500 9300 1600
+Entry Wire Line
+	9200 1300 9300 1400
+Entry Wire Line
+	9200 1100 9300 1200
+Entry Wire Line
+	9200 900  9300 1000
+Wire Wire Line
+	7800 1450 8200 1450
+Wire Wire Line
+	8200 1450 8200 900 
+Wire Wire Line
+	8200 900  9200 900 
+Wire Wire Line
+	7800 1750 8300 1750
+Wire Wire Line
+	8300 1750 8300 1100
+Wire Wire Line
+	8300 1100 9200 1100
+Wire Wire Line
+	7800 2050 8400 2050
+Wire Wire Line
+	8400 2050 8400 1300
+Wire Wire Line
+	8400 1300 9200 1300
+Wire Wire Line
+	7800 2350 8500 2350
+Wire Wire Line
+	8500 2350 8500 1500
+Wire Wire Line
+	8500 1500 9200 1500
+Wire Wire Line
+	6700 2350 6700 2650
+Wire Wire Line
+	6700 2650 8600 2650
+Wire Wire Line
+	8600 2650 8600 1700
+Wire Wire Line
+	8600 1700 9200 1700
+Wire Wire Line
+	6700 2050 6400 2050
+Wire Wire Line
+	6400 2050 6400 2950
+Wire Wire Line
+	6400 2950 8700 2950
+Wire Wire Line
+	8700 2950 8700 1900
+Wire Wire Line
+	8700 1900 9200 1900
+Text Label 6200 750  3    60   ~ 0
+L1
+Wire Bus Line
+	6000 2100 6000 1000
+Wire Bus Line
+	6000 1000 6500 1000
+Wire Bus Line
+	6500 1000 6500 700 
+Text Label 8200 1400 1    60   ~ 0
+L1_lp1
+Text Label 8300 1700 1    60   ~ 0
+L1_lp2
+Text Label 8400 2050 1    60   ~ 0
+L1_lp3
+Text Label 8500 2350 1    60   ~ 0
+L1_b
+Text Label 8600 2650 1    60   ~ 0
+L1_cb
+Text Label 8700 2950 1    60   ~ 0
+L1_ct
+NoConn ~ 7800 2250
+NoConn ~ 7800 1950
+NoConn ~ 7800 1650
+NoConn ~ 7800 1350
+NoConn ~ 7800 1150
+NoConn ~ 6700 2250
+NoConn ~ 6700 1950
+NoConn ~ 7800 950 
+NoConn ~ 6700 850 
+NoConn ~ 6700 950 
+NoConn ~ 6700 1050
+NoConn ~ 6700 1150
+NoConn ~ 6700 1250
+NoConn ~ 6700 1350
+NoConn ~ 6700 1450
+NoConn ~ 6700 1550
+NoConn ~ 6700 1650
+NoConn ~ 6700 1750
+Entry Wire Line
+	7850 850  7950 950 
+Entry Wire Line
+	7850 1050 7950 1150
+Wire Bus Line
+	7950 700  7950 950 
+Wire Bus Line
+	7950 950  7950 1150
+Wire Bus Line
+	6500 700  7950 700 
+Wire Wire Line
+	7800 850  7850 850 
+Wire Wire Line
+	7800 1050 7850 1050
+NoConn ~ 4750 4900
+NoConn ~ 4850 4900
+NoConn ~ 6500 5600
+NoConn ~ 6600 5600
+NoConn ~ 6700 5600
+NoConn ~ 5200 3700
+NoConn ~ 5400 3700
+NoConn ~ 5500 3700
+NoConn ~ 5600 3700
 $EndSCHEMATC
