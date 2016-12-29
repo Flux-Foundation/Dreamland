@@ -41,10 +41,10 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 6
 Title "Main Control Box"
-Date "2000-12-31"
-Rev "1a"
+Date "2016-12-28"
+Rev "1b"
 Comp "Flux Foudnation"
 Comment1 ""
 Comment2 ""
@@ -223,27 +223,13 @@ Entry Wire Line
 Entry Wire Line
 	2100 1400 2200 1500
 Wire Bus Line
-	2200 800  3200 800 
-Wire Bus Line
-	3200 800  3500 800 
-Wire Bus Line
-	3500 800  3800 800 
-Wire Bus Line
-	3800 800  4100 800 
-Wire Bus Line
-	2200 800  2200 1100
+	2200 600  2200 1100
 Wire Bus Line
 	2200 1100 2200 1500
 Wire Bus Line
-	2200 1500 2200 1450
+	2200 1500 2200 1700
 Wire Bus Line
-	2200 1450 2200 4650
-Entry Wire Line
-	3200 800  3300 900 
-Entry Wire Line
-	3500 800  3600 900 
-Entry Wire Line
-	3800 800  3900 900 
+	2200 1700 2200 4650
 Entry Wire Line
 	2100 1600 2200 1700
 Entry Wire Line
@@ -274,7 +260,7 @@ Entry Wire Line
 Wire Bus Line
 	3600 2100 3800 2100
 Wire Bus Line
-	3800 2100 6000 2100
+	3800 2100 4200 2100
 Wire Bus Line
 	4200 2100 4200 3600
 Wire Bus Line
@@ -319,9 +305,13 @@ Wire Wire Line
 Wire Wire Line
 	6400 3400 6400 5600
 Wire Bus Line
-	4100 800  4100 600 
+	2200 600  3200 600 
 Wire Bus Line
-	4100 600  6100 600 
+	3200 600  3500 600 
+Wire Bus Line
+	3500 600  3800 600 
+Wire Bus Line
+	3800 600  6100 600 
 Wire Bus Line
 	6100 600  8950 600 
 Entry Wire Line
@@ -439,14 +429,14 @@ Wire Wire Line
 	8700 2950 8700 1900
 Wire Wire Line
 	8700 1900 9200 1900
-Text Label 6200 750  3    60   ~ 0
+Text Label 6200 850  3    60   ~ 0
 L1
 Wire Bus Line
-	6000 2100 6000 1000
+	4200 2100 4200 750 
 Wire Bus Line
-	6000 1000 6500 1000
+	4200 750  6500 750 
 Wire Bus Line
-	6500 1000 6500 700 
+	6500 750  6500 750 
 Text Label 8200 1400 1    60   ~ 0
 L1_lp1
 Text Label 8300 1700 1    60   ~ 0
@@ -482,11 +472,11 @@ Entry Wire Line
 Entry Wire Line
 	7850 1050 7950 1150
 Wire Bus Line
-	7950 700  7950 950 
+	7950 750  7950 950 
 Wire Bus Line
 	7950 950  7950 1150
 Wire Bus Line
-	6500 700  7950 700 
+	6500 750  7950 750 
 Wire Wire Line
 	7800 850  7850 850 
 Wire Wire Line
@@ -500,4 +490,16 @@ NoConn ~ 5200 3700
 NoConn ~ 5400 3700
 NoConn ~ 5500 3700
 NoConn ~ 5600 3700
+Entry Wire Line
+	3200 600  3300 700 
+Entry Wire Line
+	3500 600  3600 700 
+Entry Wire Line
+	3800 600  3900 700 
+Wire Wire Line
+	3300 700  3300 900 
+Wire Wire Line
+	3600 700  3600 900 
+Wire Wire Line
+	3900 700  3900 900 
 $EndSCHEMATC

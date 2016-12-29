@@ -41,10 +41,10 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 6
 Title "Dreamland Overview"
-Date "2000-12-31"
-Rev "1a"
+Date "2016-12-28"
+Rev "1b"
 Comp "Flux Foudnation"
 Comment1 ""
 Comment2 ""
@@ -72,15 +72,203 @@ F14 "Catousel_top_data" I R 3800 3700 60
 F15 "Benches_data" I R 3800 3100 60 
 F16 "Access_point" I L 1400 3900 60 
 $EndSheet
+$Sheet
+S 4900 800  2000 1350
+U 58643230
+F0 "lamppost_control_box" 60
+F1 "lampost_internals.sch" 60
+F2 "Lamppost_data" I L 4900 1600 60 
+F3 "Lamppost_power" I L 4900 1000 60 
+F4 "light_1" I R 6900 950 60 
+F5 "light_2" I R 6900 1050 60 
+F6 "light_3" I R 6900 1150 60 
+F7 "light_4" I R 6900 1250 60 
+F8 "light_5" I R 6900 1350 60 
+F9 "light_6" I R 6900 1450 60 
+F10 "light_7" I R 6900 1550 60 
+F11 "button_switch" I R 6900 1700 60 
+F12 "button_light" I R 6900 1800 60 
+F13 "poofer" I R 6900 1950 60 
+$EndSheet
+Wire Bus Line
+	3800 2100 4100 2100
+Wire Bus Line
+	4100 2100 4100 1000
+Wire Bus Line
+	4100 1000 4900 1000
+Wire Bus Line
+	3800 2200 4200 2200
+Wire Bus Line
+	4200 2200 4200 1600
+Wire Bus Line
+	4200 1600 4900 1600
+Text Notes 4000 2600 0    60   ~ 0
+All three lamposts use the same \ncontrol box architecture.
+Wire Bus Line
+	3800 2400 3900 2400
+Wire Bus Line
+	3800 2500 3900 2500
+Wire Bus Line
+	3800 2700 3900 2700
+Wire Bus Line
+	3800 2800 3900 2800
+Wire Notes Line
+	3950 2000 3950 2850
+Wire Notes Line
+	3850 2000 3950 2000
+Wire Notes Line
+	3850 2000 3850 2850
+Wire Notes Line
+	3850 2850 3950 2850
+Text GLabel 7200 950  2    60   Input ~ 0
+light_bar
+Wire Bus Line
+	6900 950  7200 950 
+Text GLabel 7200 1750 2    60   Input ~ 0
+LED_Button
+Wire Bus Line
+	6900 1700 7200 1700
+Wire Bus Line
+	7200 1700 7200 1800
+Wire Bus Line
+	7200 1800 6900 1800
+Text GLabel 7200 1950 2    60   Input ~ 0
+12V_solenoid
+Wire Bus Line
+	6900 1950 7200 1950
+$Sheet
+S 4898 2902 1902 298 
+U 5864B548
+F0 "benches_internals" 60
+F1 "benches_control_box.sch" 60
+F2 "benches_pwr" I L 4898 3000 60 
+F3 "benches_data" I L 4898 3100 60 
+F4 "benches_light_string" I R 6800 3050 60 
+$EndSheet
+Wire Bus Line
+	3800 3100 4900 3100
+Wire Bus Line
+	4900 3000 3800 3000
+Text GLabel 7000 3050 1    60   Input ~ 0
+inner_bench_1
+Text GLabel 7200 3050 1    60   Input ~ 0
+inner_bench_2
+Text GLabel 7400 3050 1    60   Input ~ 0
+inner_bench_3
+Text GLabel 7600 3050 1    60   Input ~ 0
+outer_bench_1
+Text GLabel 7800 3050 1    60   Input ~ 0
+outer_bench_2
+Text GLabel 8000 3050 1    60   Input ~ 0
+outer_bench_3
+Text GLabel 8200 3050 1    60   Input ~ 0
+kaleidoscope_1
+Text GLabel 8400 3050 1    60   Input ~ 0
+kaleidoscope_2
+Text GLabel 8600 3050 1    60   Input ~ 0
+kaleidoscope_3
+Wire Bus Line
+	6800 3050 8600 3050
+$Sheet
+S 4900 3500 2000 1050
+U 5864D7E5
+F0 "carousel_bottom_internals" 60
+F1 "carousel_bottom_control_box.sch" 60
+F2 "carousel_bottom_pwr" I L 4900 3600 60 
+F3 "led_1" I R 6900 3600 60 
+F4 "led_2" I R 6900 3700 60 
+F5 "led_3" I R 6900 3800 60 
+F6 "led_4" I R 6900 3900 60 
+F7 "led_5" I R 6900 4000 60 
+F8 "led_6" I R 6900 4100 60 
+F9 "led_7" I R 6900 4200 60 
+F10 "led_8" I R 6900 4300 60 
+F11 "led_9" I R 6900 4400 60 
+F12 "carousel_bottom_data" I L 4900 3700 60 
+$EndSheet
+Text GLabel 7300 3600 2    60   Input ~ 0
+carousel_lower_led_bar
+Wire Bus Line
+	6900 3600 7300 3600
+Wire Bus Line
+	4900 3600 4750 3600
+Wire Bus Line
+	4750 3600 4750 3300
+Wire Bus Line
+	4750 3300 3800 3300
+Wire Bus Line
+	3800 3400 4650 3400
+Wire Bus Line
+	4650 3400 4650 3700
+Wire Bus Line
+	4650 3700 4900 3700
+Wire Bus Line
+	3800 3700 3900 3700
+Wire Bus Line
+	3900 3700 3900 4700
+Wire Bus Line
+	3900 4700 1000 4700
+Wire Bus Line
+	3800 3600 4000 3600
+Wire Bus Line
+	4000 3600 4000 4800
+Wire Bus Line
+	4000 4800 1100 4800
+Wire Bus Line
+	1100 4800 1100 5100
 $Comp
 L slip-ring sr?
-U 1 1 5864171C
-P 6050 4050
-F 0 "sr?" H 6500 4050 60  0000 C CNN
-F 1 "slip-ring" H 6050 4550 60  0000 C CNN
-F 2 "" H 5900 4050 60  0001 C CNN
-F 3 "" H 5900 4050 60  0001 C CNN
-	1    6050 4050
+U 1 1 5864F4FF
+P 2100 5450
+F 0 "sr?" H 2550 5450 60  0000 C CNN
+F 1 "slip-ring" H 2100 5950 60  0000 C CNN
+F 2 "" H 1950 5450 60  0001 C CNN
+F 3 "" H 1950 5450 60  0001 C CNN
+	1    2100 5450
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	1450 5200 1000 5200
+Wire Bus Line
+	1000 5200 1000 4700
+Wire Bus Line
+	1100 5100 1450 5100
+$Sheet
+S 3700 5000 1600 1500
+U 5865044B
+F0 "carousel_top_control_box" 60
+F1 "carousel_top_internals.sch" 60
+F2 "carousel_top_pwr" I L 3700 5100 60 
+F3 "carousel_top_data" I L 3700 5200 60 
+F4 "rotary_encoder" I L 3700 5300 60 
+F5 "led_1" I R 5300 5100 60 
+F6 "led_2" I R 5300 5200 60 
+F7 "led_3" I R 5300 5300 60 
+F8 "led_4" I R 5300 5400 60 
+F9 "led_5" I R 5300 5500 60 
+F10 "led_6" I R 5300 5600 60 
+F11 "led_7" I R 5300 5700 60 
+F12 "led_8" I R 5300 5800 60 
+F13 "led_9" I R 5300 5900 60 
+F14 "poofer_1" I R 5300 6100 60 
+F15 "poofer_2" I R 5300 6200 60 
+F16 "poofer_3" I R 5300 6300 60 
+F17 "poofer_4" I R 5300 6400 60 
+$EndSheet
+Wire Bus Line
+	2800 5100 3700 5100
+Wire Bus Line
+	2800 5200 3700 5200
+Wire Bus Line
+	3700 5300 2800 5300
+Text GLabel 5600 5100 2    60   Input ~ 0
+light_bar
+Text GLabel 5600 6100 2    60   Input ~ 0
+12V_solenoid
+Wire Bus Line
+	5300 5100 5600 5100
+Wire Bus Line
+	5300 6100 5600 6100
+Text Notes 900  7550 0    60   ~ 0
+Notes:\n1) All pwr is 230V @ 50Hz\n2) All pwr conductors are romex 14-3\n3) All data lines are Cat-5e 
 $EndSCHEMATC
